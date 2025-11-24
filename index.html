@@ -1,0 +1,158 @@
+<doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Firstname Lastname — Software Engineer | Portfolio</title>
+  <meta name="description" content="Portfolio of Firstname Lastname — backend engineer, data & AI projects. Contact: email@example.com" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#3b82f6;--muted:#94a3b8;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#071024);color:#e6eef8}
+    .container{max-width:1000px;margin:32px auto;padding:24px}
+    header{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:700;color:#031025}
+    h1{margin:0;font-size:22px}
+    p.lead{margin:4px 0 0;color:var(--muted)}
+    nav{display:flex;gap:8px}
+    a.btn{background:var(--glass);padding:8px 12px;border-radius:10px;color:inherit;text-decoration:none;font-size:14px;border:1px solid rgba(255,255,255,0.03)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:20px}
+    main{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:18px;border-radius:14px}
+    aside{position:sticky;top:24px;padding:18px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);height:max-content}
+    .projects{display:grid;gap:12px}
+    .card{background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+    .card h3{margin:0 0 8px;font-size:16px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.03);font-size:12px;color:var(--muted)}
+    .cta{display:flex;gap:8px;margin-top:12px}
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+    pre.snip{background:#071227;padding:12px;border-radius:8px;overflow:auto;font-size:13px}
+    .small{font-size:13px;color:var(--muted)}
+    .contact a{color:var(--accent);text-decoration:none}
+    .skill-list{display:flex;flex-wrap:wrap;gap:8px}
+    @media(max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:48px;height:48px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">FL</div>
+        <div>
+          <h1>Firstname Lastname</h1>
+          <p class="lead">Backend Engineer • Data & AI • Open-source enthusiast</p>
+        </div>
+      </div>
+      <nav>
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn" href="#about">About</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section id="projects">
+          <h2>Selected projects</h2>
+          <div class="projects">
+            <article class="card">
+              <h3>Apps For Old Phones</h3>
+              <p class="small">Apps For Old Phones is a project we created with the idea of ​​breathing new life into old cell phones, which often no longer receive updates or are unable to run modern applications.</p>
+              <div class="tags" style="margin-top:8px">
+                <span class="tag">HTML+CSS</span><span class="tag">JS</span><span class="tag">React JS</span>
+              </div>
+              <div class="cta">
+                <a class="btn" href="https://github.com/g4611802-commits/Apps-For-Old-Phones" target="_blank">GitHub</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Data Pipeline — ETL + DW</h3>
+              <p class="small">ETL pipeline that extracts CSV/JSON, transforms and loads into a simple data-warehouse. Includes Airflow DAG examples.</p>
+              <div class="tags" style="margin-top:8px">
+                <span class="tag">Python</span><span class="tag">Airflow</span><span class="tag">BigQuery</span>
+              </div>
+              <div class="cta">
+                <a class="btn" href="https://github.com/USERNAME/data-pipeline" target="_blank">GitHub</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>AI Chat Assistant</h3>
+              <p class="small">Small demo of a retrieval-augmented chatbot with vector embeddings and a clean UI.</p>
+              <div class="tags" style="margin-top:8px">
+                <span class="tag">ML</span><span class="tag">Embeddings</span><span class="tag">Streamlit</span>
+              </div>
+              <div class="cta">
+                <a class="btn" href="https://github.com/USERNAME/ai-chat" target="_blank">GitHub</a>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <section id="about" style="margin-top:20px">
+          <h2>About me</h2>
+          <p class="small">I have 40+ IT certificates in cloud, databases, AI and security. I focus on shipping projects that solve real problems. I prefer backend & data work but I can build full-stack apps and data pipelines.</p>
+
+          <h3 style="margin-top:12px">Skills</h3>
+          <div class="skill-list">
+            <div class="tag">Backend</div>
+            <div class="tag">APIs</div>
+            <div class="tag">SQL</div>
+            <div class="tag">Python</div>
+            <div class="tag">Docker</div>
+            <div class="tag">Testing</div>
+          </div>
+
+          <h3 style="margin-top:12px">How to evaluate my code</h3>
+          <ol class="small">
+            <li>Open repository README for setup & run instructions.</li>
+            <li>Run tests (if present) and follow Docker / local setup steps.</li>
+            <li>Look at commit history for development flow.</li>
+          </ol>
+        </section>
+
+        <footer>
+          <p class="small">Tip: replace placeholder links with your real repo URLs and host demos on Vercel or GitHub Pages.</p>
+        </footer>
+      </main>
+
+      <aside>
+        <div class="card contact">
+          <h3>Contact</h3>
+          <p class="small">Email: <a href="mailto:g4611802@gmail.com">g4611802@gmail.com</a></p>
+          <p class="small">LinkedIn: <a href="www.linkedin.com/in/arthur-wonglon-sedres-alves-6bb468368" target="_blank">www.linkedin.com/in/arthur-wonglon-sedres-alves-6bb468368</a></p>
+          <p class="small">GitHub: <a href="https://github.com/g4611802" target="_blank">github.com/g4611802</a></p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Quick links</h3>
+          <p class="small">Resume — <a href="/resume.pdf" target="_blank">Download</a></p>
+          <p class="small">Top skills: Backend, SQL, Cloud, Testing</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>How to view code</h3>
+          <pre class="snip">git clone https://github.com/USERNAME/portfolio.git
+cd portfolio
+# open index.html in a browser or deploy to GitHub Pages/Vercel
+</pre>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    // Small: keyboard shortcut to copy email (for demo)
+    document.addEventListener('keydown', e => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'e') {
+        navigator.clipboard && navigator.clipboard.writeText('g4611802@gmail.com');
+        alert('Email copied to clipboard: g4611802@gmail.com');
+      }
+    });
+  </script>
+</body>
+</html>
