@@ -1,6 +1,8 @@
 # my-portifolio
 
-# About Portifolio
+---
+
+# 🤔 About Portifolio
 A personal portfolio built with HTML, CSS and JavaScript to showcase skills, certificates, projects and contact information in a clean and professional layout for recruiters and internship applications in the United States.
 
 ---
@@ -24,3 +26,5 @@ This project serves as an online resume and can be hosted on **GitHub Pages or V
   - Contact
 - Easy to edit and customize
 - Suitable for recruiters and internship applications in the United States
+
+---
